@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zjc.qualitytrackingee.activity.ShowGoodsClassActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="#D4D4D4"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/allgoods_title_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/allgoodsclass_back_ll"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="商品类别列表"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/allgoods_title_rl"
+        android:background="#8DEEEE"
+        android:id="@+id/show_goodsclass_spinner_ll">
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/allgoodsclass_list_sp">
+        </Spinner>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginTop="80dp"
+        android:id="@+id/show_goodsclass_srl">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/allgoodsclass_rv">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:id="@+id/eetab_home_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/eetab_home_ib"
+            android:layout_width="23dp"
+            android:layout_height="35dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:clickable="false"
+            android:src="@drawable/home_press" />
+
+        <TextView
+            android:id="@+id/eetab_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/home"
+            android:textColor="#FF4081"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/eetab_mine_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/eetab_mine_ib"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/mine" />
+        <TextView
+            android:id="@+id/eetab_mine_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine"
+            android:textColor="#272727"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

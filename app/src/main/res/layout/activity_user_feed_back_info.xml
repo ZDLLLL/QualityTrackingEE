@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserFeedBackInfoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/user_feedback_info_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/user_feedback_info_back_ll"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="反馈详情"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/user_feedback_info_user_tv"
+        android:layout_below="@+id/user_feedback_info_rl"
+        android:layout_height="80dp">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/user_feedback_info_userimage_iv"
+        android:src="@drawable/head1"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/user_feedback_info_userimage_iv"
+            android:text="周栋利"
+            android:id="@+id/user_feedback_info_username_tv"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/user_feedback_info_time_tv"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:text="2018-11-7 9:30:00"
+            android:textSize="14dp"
+            android:layout_toEndOf="@+id/user_feedback_info_userimage_iv" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/user_feedback_info_time_tv"
+            android:gravity="center"
+            android:text="评分:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:text="4.0"
+            android:gravity="center|left"
+            android:textSize="18dp"
+            android:id="@+id/user_feedback_info_score_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/user_feedback_info_goodsname_rl"
+        android:layout_below="@+id/user_feedback_info_user_tv">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/user_feedback_info_goodsname_tv"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="联想电脑"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/user_feedback_info_image_rl"
+        android:layout_below="@+id/user_feedback_info_goodsname_rl">
+
+        <ImageView
+            android:id="@+id/user_feedback_info_image1_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/addgood" />
+
+        <ImageView
+            android:id="@+id/user_feedback_info_image3_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/addgood" />
+
+        <ImageView
+            android:id="@+id/user_feedback_info_image2_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/addgood" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/user_feedback_info_image_rl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="反馈内容："
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_border"
+            android:id="@+id/user_feedback_info_messgae_tv"
+            android:textSize="18sp"
+            android:text="这个东西实在是太丑了"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/user_feedback_info_read_bt"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            android:text="已读"/>
+    </RelativeLayout>
+</RelativeLayout>

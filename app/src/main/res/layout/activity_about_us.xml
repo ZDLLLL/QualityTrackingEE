@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zjc.qualitytrackingee.activity.AboutUsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/eemine_title_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="我的"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:text="
+我想要转达给你 虽然那悲伤的时间全消散后你才听见
+闭上眼睛感受吧 那悸动的心 和我望向你的那眼神
+不要等待特别的奇迹 眼前是我们曾经历的路
+虽然未知的未来和险阻不能更改 但我不会放弃
+请你用不变的爱来守护我 还有我伤痕累累的真心
+视线中不需要多余的言语 这段停滞的时间已被丢弃
+我爱你 这感觉就这样 结束了迷茫和徘徊
+这世上一直反复无常的悲伤 现在说再见
+在无数未知的道路上 我追赶着模糊的光芒
+永远都在一起 直到再次重逢我的世界
+不要等待特别的奇迹 眼前是我们曾经历的路
+虽然未知的未来和险阻不能更改 但我不会放弃
+请你用不变的爱来守护我 还有我伤痕累累的真心
+视线中不需要多余的言语 这段停滞的时间已被丢弃
+我爱你 这感觉就这样 结束了迷茫和徘徊
+这世上一直反复无常的悲伤 现在说再见
+在无数未知的道路上 我追赶着模糊的光芒
+永远都在一起 直到再次重逢我们的...
+如此黑暗的夜里 独自感受到你温暖的呼吸
+这瞬间 热情扑来的所有悸动 都将向你展开
+我爱你 这感觉就这样 结束了迷茫和徘徊
+这世上一直反复无常的悲伤 现在说再见
+只要想到你我会变得更强大 请帮助让我不再哭泣
+永远都在一起 直到再次重逢我们的..."
+        />
+</RelativeLayout>

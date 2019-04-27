@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EEfragment.EEMineFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/eemine_title_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="我的"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/eemine_title_rl"
+        android:id="@+id/eemine_sfl"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D4D4D4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/eemine_bg_rl"
+            android:background="@drawable/mmin"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ee_picture_url_iv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/head0" />
+            <TextView
+                android:id="@+id/ee_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="追踪"
+                android:textColor="#ff4081"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/eemine_changepw_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/eemine_bg_rl"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/password" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/eemine_update_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/eemine_changepw_ll"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/mine_update" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="个人资料"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/eemine_update_ll"
+            android:id="@+id/eemine_jupush_ll"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/message2" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="消息推送"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/eemine_notify_iv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="right|center_vertical"
+                android:src="@drawable/on" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/eemine_clean_ll"
+            android:layout_below="@+id/eemine_jupush_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/clean_cache" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="清空缓存"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/eemine_aboutus_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/eemine_clean_ll"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/aboutus" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/eemine_schedule_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/eemine_clean_ll"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/paiban" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="我的排班"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ee_exit_ll"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/eemine_schedule_ll"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="退出登陆"
+                android:textColor="#ff4081"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

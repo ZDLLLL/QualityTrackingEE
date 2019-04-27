@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEE0"
+    tools:context=".activity.AnalysisActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/analysis_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/analysis_back_ll"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="产品追踪"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/analysis_goodsimage_rl"
+    android:layout_below="@+id/analysis_rl"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/analysis_goodsimage_iv"
+    android:src="@drawable/computer"/>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFF"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+            android:textSize="17dp"
+            android:text="商品名称："/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:id="@+id/analysis_goodsname_tv"
+            android:text="联想笔记本电脑" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFF"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:text="商品价格："/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/analysis_goodsprice_tv"
+                android:text="￥3999" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFF"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:text="商品分类名称："/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/analysis_goodsclass_tv"
+                android:text="电脑类" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFF"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:text="商品描述："/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textSize="17dp"
+                android:id="@+id/analysis_goodsdescribe_tv"
+                android:text="运行速度非常快，玩游戏很流畅" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom= "true"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="查看评价"
+            android:id="@+id/analysis_showevaluate_bt"
+            android:background="@drawable/shape"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/analysis_showdutypeople_bt"
+            android:background="@drawable/shape_red"
+            android:text="责任人追溯"/>
+    </LinearLayout>
+
+</RelativeLayout>

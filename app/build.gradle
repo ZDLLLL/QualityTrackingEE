@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.Tracking"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "48a91ee6afec22a6681a8d89", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+MobSDK {
+    appKey "284baf2b3daec"
+    appSecret "f965897e86b2a0e0f6cc593cb7accc40"
+
+    SMSSDK {}
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //注解
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //可滑动布局
+    implementation 'com.android.support:design:28.0.0'
+    //volley
+    implementation 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+//轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+    //解析json gosn
+    implementation 'io.github.openfeign:feign-gson:9.5.0'
+    //recycleView
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //拼音
+    implementation 'com.belerweb:pinyin4j:2.5.1'
+    //提示对话框
+    implementation 'com.github.Othershe:NiceDialog:1.1.1'
+    //加载图片
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'jp.wasabeef:glide-transformations:2.0.0'
+    implementation "com.android.support:design:28.0.0"
+    //上传图片
+    implementation 'com.lzy.widget:imagepicker:0.5.4'
+    //扫一扫集成
+    implementation 'com.github.yuzhiqiang1993:zxing:2.2.1'
+    //极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.1.6'  // 此处以JPush 3.1.6 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.2.5'  // 此处以JCore 1.2.5 版本为例。
+    //弹出菜单
+    implementation 'com.ms-square:etsyblur:0.2.1'
+    //okhttp3
+    implementation 'com.squareup.okhttp3:okhttp:3.3.0'
+    //数字滚动
+    //implementation 'top.wuhaojie:scrollnumber:1.0.0'
+//    implementation 'com.robinhood.ticker:ticker:1.0.1'
+    implementation 'com.github.newcaoguo:EasyRollingNumber:1.0'
+    //裁剪框
+    implementation 'com.github.AnliaLee:PhotoFactory:1.1.2'
+    implementation 'com.github.AnliaLee:PhotoFactory:1.2.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zjc.qualitytrackingee.activity.ChangePhoneActivity">
+
+    <RelativeLayout
+        android:id="@+id/changephone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00A7FF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/changephone_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更换手机号"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/changephone_hint_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/changephone_rl"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="更换手机号后，下次登录可使用新手机号登录"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="当前手机号："
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/changephone_oldphone_tv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="130dp"
+                android:text="18248617820"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp">
+
+        <EditText
+            android:id="@+id/changephone_newphone_et"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:hint="新的手机号" />
+
+        <EditText
+            android:id="@+id/changephone_yzm_et"
+            android:layout_width="230dp"
+
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:hint="请输入验证码" />
+
+        <Button
+            android:id="@+id/changephone_yzm_bt"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_yzm"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="获取验证码" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/changephone_ok_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/shape"
+        android:text="完成" />
+</RelativeLayout>

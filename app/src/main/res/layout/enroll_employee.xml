@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ee_rl"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:background="@drawable/entroll_bg1"/>
+    <LinearLayout
+        android:id="@+id/ee_name_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/ee_user_ll"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/name" />
+
+        <EditText
+            android:id="@+id/ee_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请输入你的真实姓名"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:id="@+id/ee_user_ll"
+        android:layout_above="@id/ee_yzm_ll"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center">
+   <ImageView
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:src="@drawable/enroll_user"/>
+
+        <EditText
+            android:id="@+id/ee_user_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:hint="请输入你的手机号码"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ee_yzm_ll"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@id/ee_password_ll"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/yzm" />
+        <EditText
+            android:id="@+id/ee_yzm_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:hint="验证码"
+            android:inputType="text" />
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_yzm"
+            android:id="@+id/ee_gainyzm_bt"
+            android:text="获取验证码"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/ee_password_ll"
+        android:layout_above="@+id/ee_passwordagain_ll"
+        android:layout_marginRight="60dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/enroll_password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请输入你的密码"
+            android:id="@+id/ee_password_et"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/ee_passwordagain_ll"
+        android:layout_marginRight="60dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/enroll_password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请再次输入你的密码"
+            android:id="@+id/ee_passwordagain_et"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/ee_passwordagain_ll"
+        android:id="@+id/ee_company_ll">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/enroll_company"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/ee_company_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:layout_alignParentTop="true"
+                android:hint="请输入你的公司" />
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/search_ib"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@drawable/search_circle" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/ee_company_ll"
+        android:id="@+id/ee_post_ll">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/enroll_ee_post"/>
+
+        <Spinner
+            android:id="@+id/ee_post_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/ee_post_ll"
+        android:gravity="center"
+        android:layout_marginTop="67dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape"
+            android:text="注册"
+            android:textSize="20dp"
+            android:id="@+id/ee_bt"/>
+    </LinearLayout>
+</RelativeLayout>

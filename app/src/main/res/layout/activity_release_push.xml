@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zjc.qualitytrackingee.activity.ReleasePushActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/releasepush_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/releasepush_back_ll"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="发布推送"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/releasepush_publish_tv"
+            android:text="发送"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/releasepush_rl"
+        android:id="@+id/releasepuhs_result_rl"
+        android:layout_height="230dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="top|left"
+            android:background="@drawable/edittext_border"
+            android:singleLine="false"
+            android:id="@+id/releasepush_result_et"
+            android:padding="8dp"
+            android:clickable="true"
+            android:hint="请输入你要发布的内容"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/releasepush_all_cb"
+            android:layout_marginRight="40dp"
+            android:text="全选"
+            android:layout_marginTop="200dp"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/releasepuhs_result_rl"
+        android:id="@+id/releasepush_rv"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

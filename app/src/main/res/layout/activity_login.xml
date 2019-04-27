@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundimgae5"/>
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="170dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_user_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="2dp"
+            android:hint="账号"
+            android:inputType="text"
+            android:padding="5dp" />
+
+
+
+        <EditText
+            android:id="@+id/login_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="2dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/button_ll"
+        android:layout_below="@id/login_ll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:id="@+id/enter"
+        android:background="@drawable/shape_login"
+        android:text="登录"
+        android:textSize="20dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/button_ll"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <Button
+            android:id="@+id/enroll"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="注册"
+            android:gravity="left"
+            android:background="#00000000"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/textlogin_skip_bt"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:gravity="right"
+            android:text="短信验证登录"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="-------developed by ZDL-------"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+</RelativeLayout>

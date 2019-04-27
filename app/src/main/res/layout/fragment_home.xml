@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/homeback6"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/home_title_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:text="首页"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/home_message_ib"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/message" />
+    </RelativeLayout>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/home_srl"
+    android:layout_below="@+id/home_title_rl"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/scan_ib"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/qrcode" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="300dp"
+        android:text="扫一扫"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#050505"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="340dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <zjc.qualitytrackingee.View.RuningNumView
+            android:id="@+id/tx_num1"
+            android:layout_width="45dp"
+            android:background="@drawable/shape_black"
+            android:layout_height="75dp"/>
+        <zjc.qualitytrackingee.View.RuningNumView
+            android:id="@+id/tx_num2"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_black"
+            android:layout_height="75dp"/>
+        <zjc.qualitytrackingee.View.RuningNumView
+            android:id="@+id/tx_num3"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_black"
+            android:layout_height="75dp"/>
+        <zjc.qualitytrackingee.View.RuningNumView
+            android:id="@+id/tx_num4"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_black"
+            android:layout_height="75dp"/>
+        <zjc.qualitytrackingee.View.RuningNumView
+            android:id="@+id/tx_num5"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_black"
+            android:layout_height="75dp"/>
+        <zjc.qualitytrackingee.View.RuningNumView
+            android:id="@+id/tx_num6"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_black"
+            android:layout_height="75dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="420dp"
+        android:text="总产量"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#050505"
+        android:layout_height="40dp" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

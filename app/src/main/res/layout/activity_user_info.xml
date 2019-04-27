@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zjc.qualitytrackingee.activity.UserInfoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/user_info_rl"
+        android:background="#00A7FF"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/user_info_back_ll"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="个人信息"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/user_info_save_tv"
+            android:text="保存"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/userImageLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/user_info_rl"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:background="#e5e5e5">
+
+        <TextView
+            android:id="@+id/iamgetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textColor="#173070"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/user_info_image_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"
+            android:src="@drawable/head0" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/userNameLayout"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/userImageLayout"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp"
+    android:background="#e5e5e5">
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="姓名"
+        android:textColor="#173070"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/user_info_name_tv"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:text="周栋利"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/userPhoneLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/userNameLayout"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#e5e5e5">
+
+        <TextView
+            android:id="@+id/phonetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="手机号码"
+            android:textColor="#173070"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="18248617820"
+            android:id="@+id/user_info_phone_tv"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/user_info_phone_right_iv"
+            android:background="@drawable/right"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/userComapnyLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/userPhoneLayout"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#e5e5e5">
+
+        <TextView
+            android:id="@+id/companytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="公司"
+            android:textColor="#173070"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="饿了么"
+            android:id="@+id/user_info_company_tv"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/userJobLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/userComapnyLayout"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#e5e5e5">
+
+        <TextView
+            android:id="@+id/jobtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="职务"
+            android:textColor="#173070"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textSize="20dp"
+            android:id="@+id/user_info_job_tv"
+            android:text="董事长"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"/>
+    </RelativeLayout>
+</RelativeLayout>

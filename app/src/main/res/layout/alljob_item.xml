@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zjc.qualitytrackingee.utils.AllJobRecyclerItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="1dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/job_slide"
+            android:layout_toRightOf="@+id/job_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delete_job_tv"
+                android:layout_height="match_parent"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:background="#EE7621"
+                android:text="删除" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/job_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/content_white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/job_name_tv"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:text="印刷工" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</zjc.qualitytrackingee.utils.AllJobRecyclerItemView>

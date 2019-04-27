@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/releasepuhs_item_ll"
+    android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/releasepush_item_cb"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/releasepush_item_name_tv"
+        android:text="周栋利"
+        android:textSize="18dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/releasepush_item_phone_tv"
+            android:text="18248617820"
+            android:textSize="18dp"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
